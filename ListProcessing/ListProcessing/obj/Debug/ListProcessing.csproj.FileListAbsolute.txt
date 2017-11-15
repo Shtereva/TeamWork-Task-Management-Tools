@@ -1,0 +1,7 @@
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\bin\Debug\ListProcessing.exe.config
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\bin\Debug\ListProcessing.exe
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\bin\Debug\ListProcessing.pdb
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\obj\Debug\ListProcessing.csprojResolveAssemblyReference.cache
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\obj\Debug\ListProcessing.csproj.CoreCompileInputs.cache
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\obj\Debug\ListProcessing.exe
+C:\Users\Georgi\Documents\GitHub\TeamWork-Task-Management-Tools\ListProcessing\ListProcessing\obj\Debug\ListProcessing.pdb
