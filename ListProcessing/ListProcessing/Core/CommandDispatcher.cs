@@ -16,6 +16,27 @@ namespace ListProcessing.Core
                     var registerUser = new AppendCommand();
                     registerUser.Execute(commandParameters, data);
                     break;
+                case "insert":
+                    var insertCommand = new InsertCommand();
+                    insertCommand.Execute(commandParameters, data);
+                    break;
+                case "delete":
+                    var deleteCommand = new DeleteCommand();
+                    deleteCommand.Execute(commandParameters, data);
+                    break;
+                case "roll":
+                    if (commandParameters[0].ToLower() == "left")
+                    {
+                        var rollLeftCommand = new RollLeftCommand();
+                        rollLeftCommand.Execute(commandParameters, data);
+                    }
+                    if (commandParameters[0].ToLower() == "right")
+                    {
+                        var rollRightCommand = new RollRightCommand();
+                        rollRightCommand.Execute(commandParameters, data);
+                    }
+                    break;
+     
             }
         }
     }
