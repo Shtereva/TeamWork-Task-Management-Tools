@@ -36,7 +36,11 @@ namespace ListProcessing.Core
                         rollRightCommand.Execute(commandParameters, data);
                     }
                     break;
-     
+                case "prepend":
+                    var prependCommand = new PrependCommand();
+                    prependCommand.Execute(commandParameters, data);
+                    break;
+ 
             }
         }
     }

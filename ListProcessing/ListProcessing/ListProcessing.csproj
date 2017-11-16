@@ -46,6 +46,7 @@
     <Compile Include="Core\Commands\AppendCommand.cs" />
     <Compile Include="Core\Commands\DeleteCommand.cs" />
     <Compile Include="Core\Commands\InsertCommand.cs" />
+    <Compile Include="Core\Commands\PrependCommand.cs" />
     <Compile Include="Core\Commands\RollLeftCommand.cs" />
     <Compile Include="Core\Commands\RollRightCommand.cs" />
     <Compile Include="Core\Engine.cs" />
