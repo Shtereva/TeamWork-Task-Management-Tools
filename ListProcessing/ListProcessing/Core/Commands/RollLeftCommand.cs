@@ -19,6 +19,7 @@
                 data[i] = newList[i];
             }
 
+            
             Console.WriteLine(string.Join(" ", data));
         }
     }

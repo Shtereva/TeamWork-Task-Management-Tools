@@ -25,11 +25,17 @@ namespace ListProcessing.Core
                     List<string> input = Console.ReadLine()
                         .Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries)
                         .ToList();
-                    if (input[0].ToLower() == "end")
+                    if (input[0] == "end")
                     {
+                        if (input.Count != 1)
+                        {
+                            throw new Exception("Error: invalid command parameters");
+                        }
+
                         Console.WriteLine("Finished");
                         break;
                     }
+
                     this.commandDispatcher.DispatchCommand(input, data);
                 }
                 catch (Exception e)

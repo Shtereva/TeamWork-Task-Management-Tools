@@ -1,4 +1,5 @@
-﻿using ListProcessing.Core.Commands;
+﻿using System;
+using ListProcessing.Core.Commands;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -25,6 +26,10 @@ namespace ListProcessing.Core
                     deleteCommand.Execute(commandParameters, data);
                     break;
                 case "roll":
+                    if (commandParameters.Count != 1)
+                    {
+                        throw  new Exception("Error: invalid command parameters");
+                    }
                     if (commandParameters[0].ToLower() == "left")
                     {
                         var rollLeftCommand = new RollLeftCommand();
@@ -44,10 +49,18 @@ namespace ListProcessing.Core
                     var countCommand = new CountCommand();
                     countCommand.Execute(commandParameters, data);
                     break;
-                default:
-                  
+                case "sort":
+                    var sortCommand = new SortCommand();
+                    sortCommand.Execute(commandParameters, data);
                     break;
- 
+                case "reverse":
+                    var reverseCommand = new ReverseCommand();
+                    reverseCommand.Execute(commandParameters, data);
+                    break;
+                default:
+                    Console.WriteLine("Error: invalid command");
+                    break;
+
             }
         }
     }
