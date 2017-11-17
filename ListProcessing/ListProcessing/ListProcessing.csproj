@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="Core\CommandDispatcher.cs" />
     <Compile Include="Core\Commands\AppendCommand.cs" />
+    <Compile Include="Core\Commands\CountCommand.cs" />
     <Compile Include="Core\Commands\DeleteCommand.cs" />
     <Compile Include="Core\Commands\InsertCommand.cs" />
     <Compile Include="Core\Commands\PrependCommand.cs" />

@@ -40,6 +40,13 @@ namespace ListProcessing.Core
                     var prependCommand = new PrependCommand();
                     prependCommand.Execute(commandParameters, data);
                     break;
+                case "count":
+                    var countCommand = new CountCommand();
+                    countCommand.Execute(commandParameters, data);
+                    break;
+                default:
+                  
+                    break;
  
             }
         }
